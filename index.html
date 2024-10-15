@@ -9,8 +9,6 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     $(function(){
       $("#wrap .up").click(function(e){
@@ -21,55 +19,11 @@
           behavior: 'smooth',
         });
       });
-      $("#wrap .topMenu ul li").eq(0).click(function(){
-        window.scrollTo({
-          top: 0,
-          left: 0,
-          behavior: 'smooth',
-        });
-      });
-      $("#wrap .topMenu ul li").eq(1).click(function(){
-        window.scrollTo({
-          top: 950,
-          left: 0,
-          behavior: 'smooth',
-        });
-      });
-      $("#wrap .topMenu ul li").eq(2).click(function(){
-        window.scrollTo({
-          top: 1900,
-          left: 0,
-          behavior: 'smooth',
-        });
-      });
-      $("#wrap .topMenu ul li").eq(3).click(function(){
-        window.scrollTo({
-          top: 2800,
-          left: 0,
-          behavior: 'smooth',
-        });
-      });
-      $("#wrap .topMenu ul li").eq(4).click(function(){
-        window.scrollTo({
-          top: 3700,
-          left: 0,
-          behavior: 'smooth',
-        });
-      });
     });
   </script>
 </head>
 <body>
   <div id="wrap">
-    <div class="topMenu">
-      <ul>
-        <li>home</li>
-        <li>profile</li>
-        <li>gongjindan</li>
-        <li>hanwha eagles</li>
-        <li>HLL</li>
-      </ul>
-    </div>
     <div class="intro" data-aos="fade-zoom-in"
     data-aos-easing="ease-in-back"
     data-aos-delay="300"
