@@ -135,6 +135,7 @@
       opacity: 0;
       z-index: 2;
       height: 67%;
+      display: none;
   }
   .s1 .news .layer a:hover:before{
       opacity: 1;
@@ -153,6 +154,7 @@
     transition: all 0.3s ease;
     opacity: 0;
     z-index: 3;
+    display: none;
   }
   .s1 .news .layer a:hover:after{
     opacity: 1;
@@ -174,6 +176,7 @@
     opacity: 0;
     z-index: 2;
     height: 66%;
+    display: none;
   }
   .s1box .video .layer a:hover:before{
       opacity: 1;
@@ -192,6 +195,7 @@
     transition: all 0.3s ease;
     opacity: 0;
     z-index: 3;
+    display: none;
   }
   .s1box .video .layer a:hover:after{
     opacity: 1;
@@ -213,6 +217,7 @@
     opacity: 0;
     z-index: 2;
     height: 66%;
+    display: none;
   }
   .s1box .archaive .layer a:hover:before{
       opacity: 1;
@@ -231,6 +236,7 @@
     transition: all 0.3s ease;
     opacity: 0;
     z-index: 3;
+    display: none;
   }
   .s1box .archaive .layer a:hover:after{
     opacity: 1;
