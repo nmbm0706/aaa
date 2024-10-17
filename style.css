@@ -18,7 +18,7 @@ body{height: auto; padding-bottom: 250px;}
 #wrap .topMenu ul{text-align: center; position: relative; z-index: 999; display: flex; width: 1000px; justify-content: space-between;}
 #wrap .topMenu ul li{line-height: 50px; text-transform: capitalize; position: relative; z-index: 999; cursor: pointer;}
 #wrap .topMenu ul li img{width: 10px;}
-#wrap .intro{width: 100%; height: 900px; position: relative;}
+#wrap .intro{width: 100%; height: 100vh; position: relative;}
 #wrap .intro .txt{width: 100%; max-width: 1200px; margin: 300px auto 0;}
 #wrap .intro h1{font-size: 50px; font-weight: 700; color: #6e6e73; line-height: 55px;}
 #wrap .intro h1 span{color: #1d1d1f;}
@@ -32,7 +32,7 @@ body{height: auto; padding-bottom: 250px;}
 #wrap .intro .emoji h4:last-child{width: 50px;}
 #wrap .intro .emoji h4 img{width: 100%;}
 
-#wrap .profile{width: 100%; max-width: 1200px; height: 900px; margin: 0 auto; font-family: title;}
+#wrap .profile{width: 100%; max-width: 1200px; height: 100vh; margin: 0 auto; font-family: title;}
 #wrap .profile > h1{color: #6e6e73; width: 100%; max-width: 1200px;}
 #wrap .profile > h1 span{color: #1d1d1f;}
 
@@ -64,12 +64,14 @@ body{height: auto; padding-bottom: 250px;}
 #wrap .profile .sub .right{width: 70%; height: 100%; background: #777;}
 
 /* .main .page 공통 */
-#wrap .main{width: 100%; height: auto; max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 250px; font-family: title;}
-#wrap .main .page{width: 100%; max-width: 1200px; border-radius: 20px; box-shadow: 2px 4px 12px #ccc; display: flex; align-items: center;}
+#wrap .main .subWrap{height: 100vh; background: #000; display: flex; justify-content: center; align-items: center;}
+#wrap .main .subWrap:nth-child(2){background: #fff;}
+#wrap .main .subWrap:nth-child(3){background: #000;}
+#wrap .main .page{width: 100%; max-width: 1200px; margin: 0 auto; border-radius: 20px; box-shadow: 2px 4px 12px #ccc; display: flex; align-items: center;}
 #wrap .main .page .right .btn p a:first-child{color: #fff; background: #1140c8;}
 #wrap .main .page .left{width: 60%; margin: 0 auto; padding-top: 40px;}
 #wrap .main .page .left p img{width: 100%; vertical-align: middle;}
-#wrap .main .page .right{width: 35%; display: flex; flex-direction: column; height: 300px; justify-content: space-between; color: #fff;}
+#wrap .main .page .right{width: 35%; display: flex; flex-direction: column; height: 300px; justify-content: space-between;}
 #wrap .main .page .right .txt{display: flex; flex-direction: column; gap: 10px;}
 #wrap .main .page .right .txt h1{margin-bottom: 20px;}
 #wrap .main .page .right .txt h2{padding-left: 20px; position: relative;}
@@ -88,18 +90,29 @@ body{height: auto; padding-bottom: 250px;}
 #wrap .main .page .right .btn p a{display: inline-block; border: 1px solid #1140c8; border-radius: 50px; padding: 7px 15px; color: #1140c8;}
 /* ------------------------ */
 
-#wrap .main .first{height: 600px; background: linear-gradient(180deg, rgba(57,214,255,1) 0%, rgba(240,215,215,1) 100%); position: relative;}
-#wrap .main .first .left p{overflow: hidden; border-radius: 20px; position: absolute;}
-#wrap .main .first .left p:first-child{width: 500px; top: 50%; left: 100px; transform: translateY(-50%);}
-#wrap .main .first .left p:nth-child(2){width: 400px; top: 50%; left: 250px; transform: translateY(-40%);}
-#wrap .main .first .left p:nth-child(3){width: 300px; top: 50%; left: 450px; transform: translateY(-23%);}
+#wrap .main .first{height: 600px; position: relative; color: #fff;}
+#wrap .main .first .left p{overflow: hidden; border-radius: 20px; position: absolute; width: 500px; top: 50%; left: 100px; transform: translateY(-50%);}
 
 
-#wrap .main .second{height: 600px; background: linear-gradient(0deg, rgba(117,65,38,1) 0%, rgba(255,102,0,1) 100%); position: relative;}
-#wrap .main .second .left p{overflow: hidden; border-radius: 20px; position: absolute; width: 500px; top: 50%; left: 100px; transform: translateY(-50%);}
+#wrap .main .second{height: 600px; position: relative;}
+#wrap .main .second .left p{overflow: hidden; border-radius: 20px; position: absolute; width: 500px; top: 50%; left: 100px; transform: translateY(-50%); color: #000;}
+#wrap .main .second .right .txt h2::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #000;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
 
-#wrap .main .third{height: 600px; background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%); position: relative;}
-#wrap .main .third .left p{overflow: hidden; border-radius: 20px; position: absolute; width: 500px; top: 50%; left: 100px; transform: translateY(-50%);}
+#wrap .main .third{height: 600px; position: relative; color: #fff;}
+#wrap .main .third .left p{overflow: hidden; border-radius: 20px; position: absolute;}
+#wrap .main .third .left p:first-child{width: 500px; top: 50%; left: 100px; transform: translateY(-50%);}
+#wrap .main .third .left p:nth-child(2){width: 400px; top: 50%; left: 250px; transform: translateY(-40%);}
+#wrap .main .third .left p:nth-child(3){width: 300px; top: 50%; left: 450px; transform: translateY(-23%);}
 
 #wrap .up{background: #000; display: inline-block; border-radius: 50%; width: 30px; margin: 0 auto; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); font-family: title;}
 #wrap .up a img{vertical-align: middle; width: 100%;}
