@@ -29,31 +29,31 @@
         });
       });
       $("#wrap .topMenu ul li").eq(1).click(function(){
+        var location = document.querySelector('.profile').offsetTop;
         window.scrollTo({
-          top: 950,
-          left: 0,
-          behavior: 'smooth',
+          top:location, 
+          behavior: 'smooth'
         });
       });
       $("#wrap .topMenu ul li").eq(2).click(function(){
+        var location = document.querySelector('.subWrap1').offsetTop;
         window.scrollTo({
-          top: 1900,
-          left: 0,
-          behavior: 'smooth',
+          top:location, 
+          behavior: 'smooth'
         });
       });
       $("#wrap .topMenu ul li").eq(3).click(function(){
+        var location = document.querySelector('.subWrap2').offsetTop;
         window.scrollTo({
-          top: 2800,
-          left: 0,
-          behavior: 'smooth',
+          top:location, 
+          behavior: 'smooth'
         });
       });
       $("#wrap .topMenu ul li").eq(4).click(function(){
+        var location = document.querySelector('.subWrap3').offsetTop;
         window.scrollTo({
-          top: 3700,
-          left: 0,
-          behavior: 'smooth',
+          top:location, 
+          behavior: 'smooth'
         });
       });
     });
@@ -65,30 +65,23 @@
       <ul>
         <li>home</li>
         <li>profile</li>
-        <li>gongjindan</li>
-        <li>hanwha eagles</li>
         <li>HLL</li>
+        <li>hanwha eagles</li>
+        <li>gongjindan</li>
       </ul>
     </div>
-    <div class="intro" data-aos="fade-zoom-in"
-    data-aos-easing="ease-in-back"
-    data-aos-delay="300"
-    data-aos-offset="0">
+    <div class="intro">
       <div class="txt">
-        <h1>안녕하세요,<br><strong><span>박민</span>입니다.</strong></h1>
-        <h2>제 포트폴리오를 소개합니다.</h2>
-        <div class="emoji">
-          <h4><img src="images/emoji1.png" alt="emoji1"></h4>
-          <h4><img src="images/emoji2.png" alt="emoji2"></h4>
-        </div>
+        <h3>PORT<span>FOLIO</span></h3>
+        <h1 data-aos="fade-up" data-aos-duration="2000">배움을 두려워하지 않는 <span>도전자</span>,<br><strong>박민</strong>입니다.</h1>
       </div>
-      <h3>PORT<span>FOLIO</span></h3>
     </div>
     <div class="profile" data-aos="fade-up" data-aos-duration="2000">
       <h1><span>저</span>를 소개합니다.</h1>
       <div class="sub">
         <div class="box box1">
           <p><img src="images/intro.png" alt="intro"></p>
+          <p><img src="images/introCrop.png" alt="introCrop"></p>
           <span><img src="images/hamburger.jfif" alt="hamburger"></span>
         </div>
         <div class="box box2">
@@ -111,16 +104,17 @@
       </div>
     </div>
     <div class="main">
-      <div class="subWrap">
+      <div class="subWrap subWrap1">
         <div class="page first" data-aos="fade-up" data-aos-duration="2000">
           <div class="left">
             <p><img src="images/HLLImac.png" alt="HLLImac"></p>
           </div>
           <div class="right">
             <div class="txt">
-              <h1>HLL 중앙</h1>
+              <h1><img src="images/HLLlogoSmallWhite.svg" alt="hllwhite"></h1>
               <h2>개인 작업 100%</h2>
-              <h2>서브 페이지 -<br>COMPANY</h2>
+              <h2>서브 페이지 - COMPANY</h2>
+              <h3>HTML, CSS, JavaScript</h3>
             </div>
             <div class="btn">
               <p>
@@ -131,16 +125,17 @@
           </div>
         </div>
       </div>
-      <div class="subWrap">
+      <div class="subWrap subWrap2">
         <div class="page second" data-aos="fade-up" data-aos-duration="2000">
           <div class="left">
             <p><img src="images/hanwhaImac.png" alt="hanwhaImac"></p>
           </div>
           <div class="right">
             <div class="txt">
-              <h1>한화이글스</h1>
+              <h1><img src="images/img_eagles_ci_02.png" alt="eagles"></h1>
               <h2>개인 작업 100%</h2>
-              <h2>서브 페이지 -<br>EAGLES > 구단소개</h2>
+              <h2>서브 페이지 - EAGLES</h2>
+              <h3>HTML, CSS, JavaScript</h3>
             </div>
             <div class="btn">
               <p>
@@ -151,7 +146,7 @@
           </div>
         </div>
       </div>
-      <div class="subWrap">
+      <div class="subWrap subWrap3">
         <div class="page third" data-aos="fade-up" data-aos-duration="2000">
           <div class="left">
             <p><img src="images/gongjindanImac.png" alt="gongjindanImac"></p>
@@ -160,9 +155,10 @@
           </div>
           <div class="right">
             <div class="txt">
-              <h1>월간 공진단</h1>
+              <h1><img src="images/sub_list_logo.png" alt="logo"></h1>
               <h2>개인 작업 100%</h2>
               <h2>반응형 웹페이지 구현</h2>
+              <h3>HTML, CSS, JavaScript</h3>
             </div>
             <div class="btn">
               <p>
